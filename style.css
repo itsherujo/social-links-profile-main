@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* === COLOR === */
+    --background-color-body: hsl(0, 0%, 8%);
+    --background-color-container: hsl(0, 0%, 12%);
+    --background-color-button: hsl(0, 0%, 20%);
+    --text-color-1: hsl(75, 94%, 57%);
+    --text-color-2: hsl(0, 0%, 100%);
+    --text-color-3: #B4B4B4;
+
+    /* === FONT === */
+    --font-size-p: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'MyCustomFont';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-body);
+    font-family: "Inter", serif;
+}
+
+main {
+    width: 345px;
+    height: 552px;
+    background-color: var(--background-color-container);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 38px;
+}
+
+section.up {
+    display: grid;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+section img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: var(--text-color-2);
+    font-weight: 500;
+}
+
+h5 {
+    color: var(--text-color-1);
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--text-color-3);
+    font-size: var(--font-size-p);
+}
+
+section ul {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+    list-style: none;
+    text-align: center;
+}
+
+section ul li {
+    background-color: var(--background-color-button);
+    width: 270px;
+    padding: 10px 0;
+    border-radius: 10px;
+
+}
+
+section ul li:hover {
+    background-color: var(--text-color-1);
+    color: var(--background-color-body);
+    cursor: pointer;
+}
+
+section ul li:hover a {
+    color: var(--background-color-body);
+}
+
+section ul li a {
+    color: var(--text-color-2);
+    text-decoration: none;
+    font-weight: 500;
+}
+
